@@ -1,6 +1,6 @@
 FROM python:3.8
 
-COPY /techtrends /techtrends
+COPY techtrends /techtrends
 WORKDIR /techtrends
 EXPOSE 3111
 
