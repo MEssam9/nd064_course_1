@@ -13,5 +13,5 @@ spec:
       valueFiles:
       - values-staging.yaml
     path: project/helm
-    repoURL: https://github.com/messam93/nd064_course_1
+    repoURL: https://github.com/messam9/nd064_course_1
     targetRevision: HEAD
