@@ -1,0 +1,26 @@
+namespace:
+  name: sandbox
+ 
+services:
+  port: 4111
+  targetport: 3111
+  protocol: TCP
+  type: ClusterIP
+
+image: 
+  repository: messam93/techtrends
+  tag : latest
+  pullPolicy : IfNotPresent
+
+replicaCount: 1
+
+resources :
+  requests:
+    memory: 64Mi
+    CPU: 250M
+  limits:
+    memory: 128Mi
+    CPU: 500M
+containerPort: 3111
+livenessProbe: /healthz
+readinessProbe: /healthz
